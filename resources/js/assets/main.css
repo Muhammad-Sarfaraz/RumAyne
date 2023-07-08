@@ -1,0 +1,324 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/**
+ * Colors
+ */
+
+
+/**
+ * Typography
+ */
+
+
+/**
+ * Grid
+ */
+
+
+/**
+ * Animations
+ */
+
+h1 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    line-height: 1.2em;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #C4C4C4;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: #000000;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+p.p-sm {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1500FF;
+    transition: all 100ms;
+}
+
+a:hover {
+    color: #7366ff;
+    transition: all 100ms;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #E8E8E8;
+    margin: 20px 0;
+}
+
+
+/**
+ * Colors
+ */
+
+.text-yellow {
+    color: #F9BD4F;
+}
+
+.text-yellow:hover {
+    color: #fbcf80;
+}
+
+.text-red {
+    color: #b8232f;
+}
+
+.text-red:hover {
+    color: #d93543;
+}
+
+.text-magenta {
+    color: #FF3AB4;
+}
+
+.text-magenta:hover {
+    color: #ffa0db;
+}
+
+.text-green {
+    color: #7ED321;
+}
+
+.text-green:hover {
+    color: #b0e971;
+}
+
+.text-purple {
+    color: #9013FE;
+}
+
+.text-purple:hover {
+    color: #c079fe;
+}
+
+.text-pink {
+    color: #FF8DEC;
+}
+
+.text-pink:hover {
+    color: #ffc0f5;
+}
+
+
+/**
+ * Styles
+ */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media only screen and (max-width: 1024px) {
+    .text-right {
+        text-align: left;
+    }
+}
+
+.strikeout {
+    text-decoration: line-through;
+}
+
+.container {
+    margin: 100px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        margin: 40px;
+    }
+}
+
+.grid {
+    width: 100%;
+}
+
+.grid .row {
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid .row {
+        flex-direction: column;
+    }
+}
+
+.grid .row .col-1 {
+    flex: 1;
+}
+
+.grid .row .col-2 {
+    flex: 2;
+}
+
+.grid .row .col-3 {
+    flex: 3;
+}
+
+.grid .row div[class^=col] {
+    margin-right: 40px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid .row div[class^=col] {
+        flex: 1 1 auto;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+.grid .row div[class^=col]:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid .row div[class^=col]:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(20deg);
+    }
+}
+
+.wave {
+    position: absolute;
+    margin-left: 5px;
+    animation-name: wave;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: 4;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: block;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #C4C4C4;
+    padding: 0;
+    text-decoration: none;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    border: 1px solid #E8E8E8;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.project .project-icon {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.project .project-icon img {
+    width: 60px;
+    height: auto;
+}
+
+.project .project-description {
+    flex: 6;
+}
+
+.project .project-description h1 {
+    margin-bottom: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+.intro {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.intro .intro-inner {
+    display: flex;
+    background-color: #F0F0F0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.intro .intro-inner:before {
+    background-image: url("https://avatars.githubusercontent.com/u/6128107?s=200&v=4");
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    display: inline-block;
+}
+
+.intro .intro-inner .text {
+    display: inline-block;
+    padding: 0 20px 0 10px;
+}
+
+
+/*# sourceMappingURL=style.css.map */

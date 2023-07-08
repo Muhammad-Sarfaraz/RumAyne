@@ -1,0 +1,11 @@
+// import 'module' from 'module';
+
+    class ModuleService{
+
+        execute(){
+            console.log('execute')
+        }
+
+    }
+
+    export default new ModuleService()
