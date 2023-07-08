@@ -29,6 +29,7 @@
 
 import { mapState, mapGetters, mapMutations } from 'vuex';
 import master from './layout/master.vue';
+import NotificationService from '@/services/notification.service';
 
 export default {
   components: {
@@ -63,6 +64,8 @@ export default {
     setTimeout(() => {
 
     }, 2000)
+
+    NotificationService.success("Hey,There");
 
 
     fetch('https://jsonplaceholder.typicode.com/todos/1')
