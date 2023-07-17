@@ -4,7 +4,9 @@ Supercharge your Laravel and Vue.js development with this lightning-fast Vite-po
 # Feature
 
 # Installation
-``` git clone ```
+- ``` git clone ```
+- - ``` composer install ```
+- ``` npm install ```
 
 # Credits
 
