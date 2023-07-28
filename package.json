@@ -19,5 +19,8 @@
         "vue-router": "^4.2.2",
         "vue3-toastify": "^0.1.11",
         "vuex": "^4.0.2"
+    },
+    "dependencies": {
+        "shiki": "^0.14.3"
     }
 }
