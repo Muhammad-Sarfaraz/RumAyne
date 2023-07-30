@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\AuthenticationController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::any('admin/login', AuthenticationController::class)->name('frontend.authenticate');
+
 
 Auth::routes();
 
