@@ -21,7 +21,5 @@ Route::get('/', function () {
 
 Route::any('admin/login', AuthenticationController::class)->name('frontend.authenticate');
 
-
 Auth::routes();
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

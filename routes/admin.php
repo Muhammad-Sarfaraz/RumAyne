@@ -1,6 +1,5 @@
 <?php
 
-
 Route::get('admin', function () {
-    return "Admin";
-});
+    return "Admin Route";
+})->middleware('backend');
